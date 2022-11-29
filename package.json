@@ -17,9 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco  start --config config/dev.craco.config.js",
+    "build": "craco  build --config config/pro.craco.config.js",
+    "test": "craco  test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tar": "^6.1.12",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack-shell-plugin-next": "^2.3.1"
   }
 }
